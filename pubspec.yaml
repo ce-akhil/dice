@@ -24,6 +24,9 @@ dependencies:
   get_it: ^7.2.0
   rive: ^0.7.22
   google_fonts: ^2.1.0
+  maze:
+  flame:
+  animated_text_kit: ^2.1.0
   window_size:
     git:
       url: https://github.com/google/flutter-desktop-embedding.git
@@ -39,6 +42,13 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+
+flutter_icons:
+  android: "launcher_icon"
+  adaptive_icon_background: "#000000"
+  adaptive_icon_foreground: "#000000"
+  ios: true
+  image_path: "assets/icon/icon.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -56,6 +66,33 @@ flutter:
     - assets/images/
     - assets/rive/
     - assets/dices/
+    - assets/audio/bgm/menu.mp3
+    - assets/audio/bgm/music.mp3
+    - assets/audio/bgm/ingame.mp3
+    - assets/audio/bgm/intro.mp3
+    - assets/audio/sfx/block.wav
+    - assets/audio/sfx/menu.aac
+
+  fonts:
+    - family: JetBrainsMono
+      fonts:
+        - asset: assets/fonts/JetBrainsMono-Regular.ttf
+        - asset: assets/fonts/JetBrainsMono-Italic.ttf
+          style: italic
+        - asset: assets/fonts/JetBrainsMono-Bold.ttf
+          weight: 700
+
+    - family: Rajdhani
+      fonts:
+        - asset: assets/fonts/Rajdhani-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Rajdhani-Regular.ttf
+        - asset: assets/fonts/Rajdhani-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Rajdhani-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Rajdhani-Bold.ttf
+          weight: 700
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

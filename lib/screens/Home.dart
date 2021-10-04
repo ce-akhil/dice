@@ -1,6 +1,7 @@
 import 'package:dices/games/dices/dice.dart';
 import 'package:dices/games/dices/dices.dart';
 import 'package:dices/games/jardinains/lib/view.dart';
+import 'package:dices/games/maze/maze.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -9,6 +10,7 @@ class HomePage extends StatelessWidget {
     'Dice',
     'Dices',
     'Jardinains',
+    'Maze',
   ];
 
   final List<MaterialPageRoute> route = [
@@ -20,6 +22,9 @@ class HomePage extends StatelessWidget {
     ),
     MaterialPageRoute(
       builder: (context) => MyApp(),
+    ),
+    MaterialPageRoute(
+      builder: (context) => MazeScreen(),
     ),
   ];
 

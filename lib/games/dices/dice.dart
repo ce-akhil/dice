@@ -1,4 +1,3 @@
-
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -14,7 +13,7 @@ class _DicePageState extends State<DicePage> {
 
   void changeDiceFace() {
     setState(
-          () {
+      () {
         leftDiceNumber = Random().nextInt(6) + 1;
       },
     );

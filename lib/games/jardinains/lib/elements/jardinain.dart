@@ -26,8 +26,8 @@ class JardinainWidget extends StatefulWidget {
 }
 
 class _JardinainWidgetState extends State<JardinainWidget> {
-  final RiveAnimationController _idleController = SimpleAnimation('idle',autoplay: false);
-  final RiveAnimationController _laughController = SimpleAnimation('Laugh',autoplay: false);
+  final RiveAnimationController _idleController = SimpleAnimation('idle');
+  final RiveAnimationController _laughController = SimpleAnimation('Laugh');
   late Random random;
   late Timer timer;
   String animation = "idle";
