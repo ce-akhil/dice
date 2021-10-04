@@ -33,7 +33,7 @@ class HomePage extends StatelessWidget {
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
     return Scaffold(
       appBar: AppBar(
-        title: Text('World of Games'),
+        title: Text('Dice Games'),
       ),
       body: ListView(
         children: List.generate(
@@ -47,7 +47,7 @@ class HomePage extends StatelessWidget {
             },
             leading: Icon(
               Icons.ac_unit,
-              color: Colors.blue,
+              color: Colors.red,
             ),
             title: Text(
               gameName[index],
@@ -55,7 +55,7 @@ class HomePage extends StatelessWidget {
             ),
             trailing: Icon(
               Icons.arrow_forward_ios_rounded,
-              color: Colors.blue,
+              color: Colors.green,
             ),
           ),
         ),
