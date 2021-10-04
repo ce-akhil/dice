@@ -15,14 +15,14 @@ class _MazeScreenState extends State<MazeScreen> {
           player: MazeItem(
               'https://image.flaticon.com/icons/png/512/808/808433.png',
               ImageType.network),
-          columns: 6,
+          columns: 12,
           rows: 12,
-          wallThickness: 4.0,
+          wallThickness: 6.0,
           wallColor: Theme.of(context).primaryColor,
           finish: MazeItem(
               'https://image.flaticon.com/icons/png/512/1506/1506339.png',
               ImageType.network),
-          onFinish: () => print('Hi from finish line!'),
+          onFinish: () => print('Congrats you finished!'),
         ),
       ),
     );
