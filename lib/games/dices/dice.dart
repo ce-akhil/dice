@@ -23,7 +23,7 @@ class _DicePageState extends State<DicePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Dice'),
+        title: Text('Dicers'),
       ),
       backgroundColor: Colors.blue,
       body: Center(
