@@ -23,9 +23,9 @@ class _DicePageState extends State<DicePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Dicers'),
+        title: Text('Dice game'),// Name of the game
       ),
-      backgroundColor: Colors.blue,
+      backgroundColor: Colors.green.shade200,
       body: Center(
         child: MaterialButton(
           onPressed: () {
