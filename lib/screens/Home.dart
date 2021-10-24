@@ -9,9 +9,9 @@ import 'package:flutter/services.dart';
 class HomePage extends StatelessWidget {
   final List<String> gameName = [
     'Dice',
-    'Dices',
-    'Jardinains',
-    'Maze',
+    'Dicers',
+    'Jardinains Info',
+    'Maze Runner',
   ];
 
   final List<MaterialPageRoute> route = [
@@ -49,7 +49,7 @@ class HomePage extends StatelessWidget {
             },
             leading: Icon(
               Icons.ac_unit,
-              color: Colors.red,
+              color: Colors.blue,
             ),
             title: Text(
               gameName[index],
@@ -57,7 +57,7 @@ class HomePage extends StatelessWidget {
             ),
             trailing: Icon(
               Icons.arrow_forward_ios_rounded,
-              color: Colors.green,
+              color: Colors.amber,
             ),
           ),
         ),
