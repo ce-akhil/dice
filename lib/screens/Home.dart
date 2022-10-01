@@ -38,26 +38,26 @@ class HomePage extends StatelessWidget {
         [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
     return Scaffold(
       appBar: AppBar(
-        title: Text('Dice Games'),
+        title: Text('Dice Game'),
       ),
       body: ListView(
         children: List.generate(
           gameName.length,
           (index) => ListTile(
             onTap: () {
-              Navigator.push(context, route[index]);
+              Navigator.push(context, route[index]); //use go router instead of what provided
             },
             leading: Icon(
               Icons.ac_unit,
-              color: Colors.blue,
+              color: Colors.blue.shade400, //shade for better look
             ),
             title: Text(
               gameName[index],
-              textAlign: TextAlign.justify,
+              textAlign: TextAlign.justify, 
             ),
             trailing: Icon(
               Icons.arrow_forward_ios_rounded,
-              color: Colors.amber,
+              color: Colors.amber.shade400,
             ),
           ),
         ),
